@@ -1,0 +1,136 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff8e1;
+}
+
+header {
+    background-color: #ffd54f;
+    color: #000;
+    text-align: center;
+    padding: 1em 0;
+    position: relative;
+}
+
+header img {
+    width: 100px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+header .abbreviation {
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-top: 0.5em;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #ffca28;
+    padding: 0.5em;
+}
+
+nav a {
+    margin: 0 1em;
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 1em;
+}
+
+.section {
+    margin-bottom: 2em;
+}
+
+.section h2 {
+    border-bottom: 2px solid #ffd54f;
+    padding-bottom: 0.5em;
+}
+
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+}
+
+.product {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #fff;
+    width: calc(33.333% - 1em);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.product img {
+    width: 100%;
+    height: auto;
+}
+
+.product-details {
+    padding: 1em;
+}
+
+.product-details h3 {
+    margin: 0.5em 0;
+    color: #ff9800;
+}
+
+.product-details p {
+    margin: 0.5em 0;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 1em;
+    padding: 0.5em 1em;
+    background-color: #ff9800;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background-color: #e68900;
+}
+
+.welcome {
+    text-align: center;
+    margin: 2em 0;
+    padding: 1em;
+    background-color: #fff;
+    border: 1px solid #ffd54f;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.welcome h1 {
+    color: #ff9800;
+    margin-bottom: 0.5em;
+}
+
+.welcome p {
+    color: #333;
+    line-height: 1.6;
+}
+
+.footer p{
+    background-color: #ffd54f;
+    text-align: center;
+    padding: 1em 0;
+    margin-top: 2em;
+}
