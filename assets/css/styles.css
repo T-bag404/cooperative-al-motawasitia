@@ -1,136 +1,309 @@
+/* General Styles */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Georgia', serif;
     margin: 0;
     padding: 0;
-    background-color: #fff8e1;
+    background-color: #f9f5e3; /* Light beige background */
+    color: #4a4a4a; /* Dark gray text */
+    line-height: 1.6;
 }
 
+/* Header Styles */
 header {
-    background-color: #ffd54f;
-    color: #000;
+    background-color: #d4a017; /* Warm golden color */
+    color: #fff;
     text-align: center;
-    padding: 1em 0;
+    padding: 2em 0;
     position: relative;
 }
 
 header img {
-    width: 100px;
+    width: 120px;
     height: auto;
     display: block;
     margin: 0 auto;
+    border-radius: 50%; /* Circular logo */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin: 0.5em 0 0.2em;
+    font-family: 'Playfair Display', serif;
+    color: #fff;
 }
 
 header .abbreviation {
     font-weight: bold;
-    font-size: 1.2em;
+    font-size: 1.5em;
     margin-top: 0.5em;
+    color: #fff;
 }
 
+header p {
+    font-size: 1.2em;
+    margin: 0.5em 0;
+    color: #fff;
+}
+
+/* Navigation Styles */
 nav {
     display: flex;
     justify-content: center;
-    background-color: #ffca28;
-    padding: 0.5em;
+    background-color: #b8860b; /* Darker golden color */
+    padding: 1em 0;
 }
 
 nav a {
-    margin: 0 1em;
+    margin: 0 1.5em;
     text-decoration: none;
-    color: #000;
+    color: #fff;
     font-weight: bold;
+    font-size: 1.1em;
+    transition: color 0.3s ease;
 }
 
 nav a:hover {
-    text-decoration: underline;
+    color: #ffd700; /* Bright gold on hover */
 }
 
+/* Container Styles */
 .container {
     max-width: 1200px;
     margin: auto;
-    padding: 1em;
+    padding: 2em;
 }
 
+/* Section Styles */
 .section {
-    margin-bottom: 2em;
+    margin-bottom: 3em;
 }
 
 .section h2 {
-    border-bottom: 2px solid #ffd54f;
+    font-size: 2em;
+    border-bottom: 3px solid #d4a017;
     padding-bottom: 0.5em;
+    margin-bottom: 1em;
+    font-family: 'Playfair Display', serif;
+    color: #4a4a4a;
 }
 
+/* Product Styles */
 .products {
     display: flex;
     flex-wrap: wrap;
-    gap: 1em;
+    gap: 1.5em;
 }
 
 .product {
     border: 1px solid #ddd;
-    border-radius: 8px;
+    border-radius: 10px;
     overflow: hidden;
     background-color: #fff;
-    width: calc(33.333% - 1em);
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: calc(33.333% - 1.5em);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 
 .product img {
     width: 100%;
-    height: auto;
+    height: 200px; /* Fixed height for uniformity */
+    object-fit: cover; /* Ensures images cover the area */
 }
 
 .product-details {
-    padding: 1em;
+    padding: 1.5em;
 }
 
 .product-details h3 {
     margin: 0.5em 0;
-    color: #ff9800;
+    font-size: 1.5em;
+    color: #d4a017;
 }
 
 .product-details p {
     margin: 0.5em 0;
+    color: #666;
 }
 
 .btn {
     display: inline-block;
     margin-top: 1em;
-    padding: 0.5em 1em;
-    background-color: #ff9800;
+    padding: 0.75em 1.5em;
+    background-color: #d4a017;
     color: #fff;
     text-decoration: none;
     border-radius: 5px;
     font-weight: bold;
+    transition: background-color 0.3s ease;
 }
 
 .btn:hover {
-    background-color: #e68900;
+    background-color: #b8860b;
 }
 
+/* Welcome Section Styles */
 .welcome {
     text-align: center;
-    margin: 2em 0;
-    padding: 1em;
+    margin: 3em 0;
+    padding: 2em;
     background-color: #fff;
-    border: 1px solid #ffd54f;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border: 1px solid #d4a017;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .welcome h1 {
-    color: #ff9800;
+    font-size: 2.5em;
+    color: #d4a017;
     margin-bottom: 0.5em;
+    font-family: 'Playfair Display', serif;
 }
 
 .welcome p {
-    color: #333;
-    line-height: 1.6;
+    font-size: 1.2em;
+    color: #4a4a4a;
+    line-height: 1.8;
 }
 
-.footer p{
-    background-color: #ffd54f;
+.welcome img {
+    width: 100%;
+    max-width: 600px;
+    margin-top: 1.5em;
+    border-radius: 10px;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #d4a017;
     text-align: center;
-    padding: 1em 0;
-    margin-top: 2em;
+    padding: 1.5em 0;
+    margin-top: 3em;
+    color: #fff;
+}
+
+footer p {
+    margin: 0;
+    font-size: 1.1em;
+}
+/* Product Section Styles */
+.product-section {
+    text-align: center;
+    margin: 3em 0;
+    padding: 2em;
+    background-color: #fff;
+    border: 1px solid #d4a017;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.product-section h2 {
+    font-size: 2em;
+    color: #d4a017;
+    margin-bottom: 1em;
+    font-family: 'Playfair Display', serif;
+}
+
+.product {
+    display: inline-block;
+    margin: 1em;
+    text-align: center;
+}
+
+.product img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 0.5em;
+}
+
+.product button {
+    background-color: #d4a017;
+    color: #fff;
+    border: none;
+    padding: 0.5em 1em;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.product button:hover {
+    background-color: #b8860b;
+}
+
+/*                         /*
+
+/* Carousel Styles */
+.carousel {
+    position: relative;
+    margin: 3em auto;
+    padding: 2em;
+    max-width: 800px;
+    background-color: #fff;
+    border: 1px solid #d4a017;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.carousel-inner {
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+}
+
+.carousel-item {
+    min-width: 100%;
+    transition: transform 0.5s ease;
+}
+
+.carousel-item img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 0.5em;
+}
+
+.carousel-item button {
+    background-color: #d4a017;
+    color: #fff;
+    border: none;
+    padding: 0.5em 1em;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.carousel-item button:hover {
+    background-color: #b8860b;
+}
+
+.carousel-control {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #d4a017;
+    font-size: 2em;
+    cursor: pointer;
+    user-select: none;
+    padding: 0 0.5em;
+    z-index: 1;
+}
+
+.carousel-control.prev {
+    left: 0;
+}
+
+.carousel-control.next {
+    right: 0;
 }
